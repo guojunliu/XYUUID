@@ -9,66 +9,66 @@
 [![Github All Releases](https://img.shields.io/badge/downloads-41KB-yellowgreen)](https://github.com/guojunliu/XYUUID/files/5116427/XYUUID.zip)
 [![Github Platform](https://img.shields.io/badge/platform-iOS-red)]()
 
-- [中文版](https://github.com/guojunliu/XYUUID/README-cn.md)
+- [English](https://github.com/guojunliu/XYUUID/README-cn.md)
 
-### Installation
+### 安装
 
 ##### CocoaPods:
--`pod'XYUUID'`
+- `pod 'XYUUID'`
 
-##### Manual integration:
-- Copy the `XYUUID` folder to your project
+##### 手动集成:
+- 拷贝 `XYUUID` 文件夹到你的项目里
 
-### Background
+### 背景
 
-- Starting from iOS 10, IDFA may be restricted by users from ad tracking, resulting in the inability to obtain IDFA normally, thus making it impossible to use IDFA as a unique device identifier
+- iOS 10开始，IDFA可能会被用户限制广告追踪，导致无法正常获取IDFA，从而导致无法使用IDFA作为唯一设备标识
 
 
-### Advantages of XYUUID
+### XYUUID的优点
 
-- Simple API
-- Use the latest iOS 14 API to get IDFA
-- Universally unique identifiers with different persistence levels
+- API简单
+- 使用了最新的iOS 14 API来获取IDFA
+- 具有不同持久性级别的通用唯一标识符
 
-### Advantages of uuidForDevice
+### uuidForDevice的优点
 
-- onger timeliness
-- Long storage
-- Lower conflict rate
-- Lower drift rate
+- 较长的时效性
+- 较长的存储性
+- 较低的冲突率
+- 较低的漂移率
 
 ### API
 
-Get UUIDs of different persistence levels
+获取不同持久化级别的UUID
 
 ```
-/// Random UUID, this value will be refreshed every time
+/// 随机UUID，此值每次都会刷新
 + (NSString *)uuid;
 
-/// Install UUID, this value will be refreshed every time you reinstall
+/// 安装UUID，每次重新安装，此值会刷新
 + (NSString *)uuidForInstall;
 
-/// Open the application UUID, this value will be refreshed every time the application is opened
+/// 开启应用UUID，每次开启应用，此值会刷新
 + (NSString *)uuidForAppOpen;
 
-/// IDFA, open and close authorization, this value will be refreshed
+/// IDFA，开启关闭授权，此值会刷新
 + (NSString *)uuidForIDFA;
 
 /// IDFV
 + (NSString *)uuidForIDFV;
 
-/// Device information UUID, generated according to device information, can remain unchanged for a period of time
+/// 设备信息UUID，根据设备信息生成，能维持一段时间内不变
 + (NSString *)uuidForDeviceInfo;
 
-/// Keychain UUID, uninstall application remains unchanged
+/// 钥匙串UUID，卸载应用保持不变
 + (NSString *)uuidForKeychain;
 
-/// Device UUID, the unique identifier of the device
+/// 设备UUID，设备唯一标识符
 + (NSString *)uuidForDevice;
 
 ```
 
-### Persistence level
+### 持久化级别
 
 
 | UUID              	 | App relaunch | Reset Advertising Identifier | App reinstall | System reboot | System upgrade | System reset |
