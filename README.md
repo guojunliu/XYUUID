@@ -9,12 +9,12 @@
 [![Github All Releases](https://img.shields.io/badge/downloads-41KB-yellowgreen)](https://github.com/guojunliu/XYUUID/files/5116427/XYUUID.zip)
 [![Github Platform](https://img.shields.io/badge/platform-iOS-red)]()
 
-- [中文版](https://github.com/guojunliu/XYUUID/README-cn.md)
+- [中文版](https://github.com/guojunliu/XYUUID/blob/master/README-cn.md)
 
 ### Installation
 
 ##### CocoaPods:
--`pod'XYUUID'`
+- `pod'XYUUID'`
 
 ##### Manual integration:
 - Copy the `XYUUID` folder to your project
