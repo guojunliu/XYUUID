@@ -3,8 +3,9 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/guojunliu/XYUUID/blob/master/LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/guojunliu/XYUUID)
-[![GitHub Release](https://img.shields.io/badge/release-v1.0.0-orange)](https://github.com/guojunliu/XYUUID/releases/tag/1.0.0)  
-[![Github All Releases](https://img.shields.io/badge/downloads-41KB-yellowgreen)](https://github.com/guojunliu/XYUUID/files/5116427/XYUUID.zip)  
+[![GitHub Release](https://img.shields.io/badge/release-v1.0.0-orange)](https://github.com/guojunliu/XYUUID/releases/tag/1.0.0)
+[![Github All Releases](https://img.shields.io/badge/downloads-41KB-yellowgreen)](https://github.com/guojunliu/XYUUID/files/5116427/XYUUID.zip)
+[![Github Platform](https://img.shields.io/badge/platform-iOS-red)]()
 
 ### 背景
 
