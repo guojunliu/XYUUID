@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define XYUUIDVersion @"1.0.0"
+
 @interface XYUUID : NSObject
 
 /// 随机UUID，此值每次都会刷新
