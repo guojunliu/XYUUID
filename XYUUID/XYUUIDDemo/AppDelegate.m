@@ -7,11 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "XYUUID.h"
-#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
-    #import <AppTrackingTransparency/AppTrackingTransparency.h>
-#endif
-#import <AdSupport/AdSupport.h>
 
 @interface AppDelegate ()
 
@@ -22,40 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-        // 获取到权限后，依然使用老方法获取idfa
-        if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
-            NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
-            NSLog(@"%@",idfa);
-        } else {
-            NSLog(@"请在设置-隐私-Tracking中允许App请求跟踪");
-        }
-    }];
-    
-    NSString *uuid = [XYUUID uuid];
-    NSLog(@"LOG uuid %@",uuid);
-
-    NSString *uuidForInstall = [XYUUID uuidForInstall];
-    NSLog(@"LOG uuidForInstall %@",uuidForInstall);
-
-    NSString *uuidForAppOpen = [XYUUID uuidForAppOpen];
-    NSLog(@"LOG uuidForAppOpen %@",uuidForAppOpen);
-
-    NSString *uuidForIDFA = [XYUUID uuidForIDFA];
-    NSLog(@"LOG uuidForIDFA %@",uuidForIDFA);
-
-    NSString *uuidForIDFV = [XYUUID uuidForIDFV];
-    NSLog(@"LOG uuidForIDFV %@",uuidForIDFV);
-
-    NSString *uuidForDeviceInfo = [XYUUID uuidForDeviceInfo];
-    NSLog(@"LOG uuidForDeviceInfo %@",uuidForDeviceInfo);
-
-    NSString *uuidForKeychain = [XYUUID uuidForKeychain];
-    NSLog(@"LOG uuidForKeychain %@",uuidForKeychain);
-
-    NSString *uuidForDevice = [XYUUID uuidForDevice];
-    NSLog(@"LOG uuidForDevice %@",uuidForDevice);
     
     return YES;
 }
