@@ -81,3 +81,9 @@ Get UUIDs of different persistence levels
 | `uuidForDeviceInfo `   |✅|✅|✅|❌|❌|❌|
 | `uuidForKeychain `     |✅|✅|✅|✅|✅|❌|
 | `uuidForDevice `       |✅|✅|✅|✅|✅|❌|
+
+
+
+# Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/guojunliu/XYUUID.svg)](https://starchart.cc/guojunliu/XYUUID)

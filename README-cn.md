@@ -81,3 +81,8 @@
 | `uuidForDeviceInfo `   |✅|✅|✅|❌|❌|❌|
 | `uuidForKeychain `     |✅|✅|✅|✅|✅|❌|
 | `uuidForDevice `       |✅|✅|✅|✅|✅|❌|
+
+
+# 此项目的星图
+
+[![Stargazers over time](https://starchart.cc/guojunliu/XYUUID.svg)](https://starchart.cc/guojunliu/XYUUID)
